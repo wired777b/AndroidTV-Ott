@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dip"
+    android:layout_height="300dip"
+    android:background="#B2000000" >
+    
+    	     <TextView
+	            android:id="@+id/weather_item_mouth"
+	            android:textSize="28dip"	  
+	            android:layout_marginTop="12dip"
+	            android:layout_marginLeft="10dip"      
+	            android:layout_width="wrap_content"
+    	 		android:layout_height="wrap_content"
+	            />
+	          <TextView
+	            android:id="@+id/weather_item_day"
+	            android:layout_marginTop="12dip"
+	            android:textSize="28dip"	        
+	            android:layout_width="wrap_content"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_toRightOf="@id/weather_item_mouth"
+	            />
+	          <com.hiveview.domybox.common.image.ImageLoadView 
+	              android:id="@+id/weather_logo"
+	              android:src="@drawable/img_default"
+	              android:layout_marginTop="10dip"
+	              android:layout_width="70dip"
+    	 		  android:layout_height="70dip"
+    	 		  android:layout_below="@+id/weather_item_mouth"
+    	 		  android:layout_centerHorizontal="true"/>
+	          <TextView
+	            android:id="@+id/weather_item_temperature"
+	            android:textSize="40dip"
+	            android:layout_marginLeft="10dip"  
+	            android:layout_width="wrap_content"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_below="@id/weather_logo"
+	            />
+	           
+	           <TextView
+	            android:id="@+id/weather_item_daytime"
+	            android:textSize="24dip"
+	            android:layout_marginLeft="10dip"  
+	            android:layout_width="match_parent"
+	            android:layout_marginTop="20dip"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_below="@id/weather_item_temperature"
+    	 		android:layout_centerHorizontal="true"
+	            />
+
+
+	           <TextView
+	            android:id="@+id/weather_item_describe"
+	            android:textSize="24dip"
+	            android:layout_width="wrap_content"
+	            android:layout_marginLeft="6dip"  
+	            android:layout_marginTop="20dip"
+    	 		android:layout_height="wrap_content"
+    	 		android:layout_below="@id/weather_item_daytime"
+	            />
+
+</RelativeLayout>

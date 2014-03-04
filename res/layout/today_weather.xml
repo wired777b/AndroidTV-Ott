@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="460dip"
+    android:layout_height="250dip"
+    android:layout_marginLeft="80dip"
+    android:layout_marginTop="20dip"
+    android:background="#B2000000"
+     >
+
+      <TextView
+          android:id="@+id/area"
+          android:layout_width="248dip"
+          android:layout_height="50dip"
+          android:layout_marginLeft="10dip"
+          android:layout_marginTop="15dip"
+          android:textSize="35dip" />
+
+	  <TextView
+	     android:id="@+id/temperature"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_below="@id/area"
+	     android:layout_marginLeft="10dip"
+	     android:textSize="48dip" />
+
+
+	   <TextView
+	     android:id="@+id/daytime"
+	     android:textSize="28dip"	
+	     android:layout_width="match_parent"
+    	 android:layout_height="wrap_content"
+    	 android:layout_marginLeft="10dip"
+    	 android:layout_marginTop="15dip"
+    	 android:layout_below="@id/temperature"
+    	 />
+
+	   
+
+       <TextView
+	     android:id="@+id/describe"
+	     android:textSize="28dip"	        
+	     android:layout_width="match_parent"
+	     android:layout_below="@id/daytime"
+    	 android:layout_height="30dip"
+    	 android:layout_marginLeft="10dip"
+    	 android:layout_marginTop="15dip"
+    	 />
+
+       <TextView
+           android:id="@+id/mouth"
+           android:layout_width="120dip"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/area"
+           android:layout_alignBottom="@+id/area"
+           android:layout_toRightOf="@+id/area"
+           android:textSize="25dip" />
+
+       <TextView
+           android:id="@+id/day"
+           android:layout_width="100dip"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/mouth"
+           android:layout_alignBottom="@+id/mouth"
+           android:layout_alignParentRight="true"
+           android:textSize="25dip" />
+
+</RelativeLayout>

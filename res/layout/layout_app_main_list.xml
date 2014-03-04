@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      >
+    
+    <com.hiveview.domybox.view.CustomDrawingOrderLayout
+	    android:id="@+id/common_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+	    <LinearLayout 
+	           android:id="@+id/app_item_mark"
+	           android:orientation="vertical"
+	           android:focusable="true"
+	           android:layout_marginTop="30dip"
+	           android:layout_marginLeft="30dip"
+	           android:background="@drawable/image_button_bg"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content">
+		       <ImageView 
+		           android:id="@+id/iv_app_market"
+		           android:layout_width="386dip"
+		           android:layout_height="238dip"
+		           android:background="@drawable/iv_app_market" />
+	       </LinearLayout>
+	       
+	       <LinearLayout 
+	           android:id="@+id/app_item_multi_media"
+	           android:layout_below="@id/app_item_mark"
+	           android:orientation="vertical"
+	           android:focusable="true"
+	           android:layout_alignLeft="@id/app_item_mark"
+	           android:layout_marginTop="-44dip"
+	           android:background="@drawable/image_button_bg"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content">
+		       <ImageView 
+		           android:id="@+id/iv_app_multi_media"
+		           android:layout_width="190dip"
+		           android:layout_height="238dip"
+		           android:background="@drawable/iv_app_multi_media" />
+	       </LinearLayout>
+       
+	       <LinearLayout 
+	           android:id="@+id/app_item_unload"
+	           android:layout_below="@id/app_item_mark"
+	           android:layout_toRightOf="@id/app_item_multi_media"
+	           android:orientation="vertical"
+	           android:focusable="true"
+	           android:layout_marginTop="-44dip"
+	           android:layout_marginLeft="-44dip"
+	           android:background="@drawable/image_button_bg"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content">
+		       <ImageView 
+		           android:id="@+id/iv_app_unload"
+		           android:layout_width="190dip"
+		           android:layout_height="238dip"
+		           android:background="@drawable/iv_app_unload" />
+	       </LinearLayout>
+	       
+	     
+	     <com.hiveview.domybox.view.AppItemView 
+	        android:layout_alignTop="@id/app_item_mark"
+	        android:id="@+id/app_item_1_line_3"
+	        android:focusable="true"
+	        android:layout_marginLeft="-45dip"
+	        android:layout_toRightOf="@id/app_item_mark"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	      
+	     <com.hiveview.domybox.view.AppItemView 
+	        android:layout_alignTop="@id/app_item_mark"
+	        android:id="@+id/app_item_1_line_4"
+	        android:focusable="true"
+	        android:layout_marginLeft="-45dip"
+	        android:layout_toRightOf="@id/app_item_1_line_3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	       
+	     <com.hiveview.domybox.view.AppItemView 
+	        android:layout_alignTop="@id/app_item_mark"
+	        android:id="@+id/app_item_1_line_5"
+	        android:focusable="true"
+	        android:layout_marginLeft="-45dip"
+	        android:layout_toRightOf="@id/app_item_1_line_4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	        
+	     <com.hiveview.domybox.view.AppItemView 
+	        android:layout_alignTop="@id/app_item_mark"
+	        android:id="@+id/app_item_1_line_6"
+	        android:focusable="true"
+	        android:visibility="gone"
+	        android:layout_marginLeft="-45dip"
+	        android:layout_toRightOf="@id/app_item_1_line_5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	     
+	     
+	     <!-- 2222222222 -->
+	      
+	     
+	     <com.hiveview.domybox.view.AppItemView 
+	        android:id="@+id/app_item_2_line_3"
+	        android:focusable="true"
+	        android:visibility="gone"
+	        android:layout_marginLeft="-45dip"
+	        android:layout_marginTop="-45dip"
+	        android:layout_below="@id/app_item_1_line_3"
+	        android:layout_toRightOf="@id/app_item_unload"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	      
+	     <com.hiveview.domybox.view.AppItemView 
+	        android:id="@+id/app_item_2_line_4"
+	        android:focusable="true"
+	        android:visibility="gone"
+	        android:layout_marginLeft="-45dip"
+	        android:layout_marginTop="-45dip"
+	        android:layout_below="@id/app_item_1_line_4"
+	        android:layout_toRightOf="@id/app_item_1_line_3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	       
+	     <com.hiveview.domybox.view.AppItemView 
+	        android:id="@+id/app_item_2_line_5"
+	        android:focusable="true"
+	        android:visibility="gone"
+	        android:layout_marginLeft="-45dip"
+	        android:layout_marginTop="-45dip"
+	        android:layout_below="@id/app_item_1_line_5"
+	        android:layout_toRightOf="@id/app_item_1_line_4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	        
+	     <com.hiveview.domybox.view.AppItemView 
+	        android:id="@+id/app_item_2_line_6"
+	        android:focusable="true"
+	        android:visibility="gone"
+	        android:layout_marginLeft="-45dip"
+	        android:layout_marginTop="-45dip"
+	        android:layout_below="@id/app_item_1_line_6"
+	        android:layout_toRightOf="@id/app_item_1_line_5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+         
+	  </com.hiveview.domybox.view.CustomDrawingOrderLayout>
+	     
+</RelativeLayout>

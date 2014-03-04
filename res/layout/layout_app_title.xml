@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dip"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tv_app_title"
+        android:layout_marginLeft="50dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:text="应用" />
+    
+     <TextView 
+        android:id="@+id/tv_app_market"
+        android:layout_toRightOf="@+id/tv_app_title"
+        android:layout_marginLeft="50dip"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:text="应用市场" />
+    
+    
+    <TextView 
+        android:id="@+id/tv_app_page"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+          />
+    
+    <TextView 
+        android:id="@+id/tv_app_installed"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tv_app_page"
+        android:layout_marginRight="30dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+          />
+    
+    <TextView 
+        android:id="@+id/tv_app_total"
+        android:layout_toLeftOf="@id/tv_app_installed"
+        android:layout_marginRight="30dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+          />
+
+</RelativeLayout>

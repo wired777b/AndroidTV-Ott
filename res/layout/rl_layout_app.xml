@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_animal_app"
+    android:background="@drawable/app_icon"
+    android:layout_width="92dip"
+    android:layout_height="92dip" >
+    
+   	    
+   	<ImageView 
+        android:id="@+id/iv_item_application_icon"
+        android:background="@drawable/app_icon"
+        android:layout_width="92dip"
+        android:layout_height="92dip" />
+   	
+   	<ImageView
+       	android:id="@+id/iv_app_animation_title"
+       	android:visibility="gone"
+       	android:layout_width="10dip"
+       	android:layout_height="5dip"
+       	android:layout_marginTop="10dip"
+       	android:layout_marginLeft="35dip"
+       	android:background="#1dc0f3" />
+    <LinearLayout
+   	    android:id="@+id/ll_app_animation_pb"
+   	    android:layout_width="50dip"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginLeft="32dip"
+   	    android:layout_marginTop="23dip"
+   	    android:orientation="vertical" >
+
+   	    <ImageView
+   	        android:visibility="gone"
+	        android:id="@+id/iv_app_animation_pb_one"
+	        android:layout_width="2dip"
+	        android:layout_height="5dip"
+	        android:layout_marginTop="4dip"
+	        android:background="@android:color/white" />
+   
+	    <ImageView
+	        android:visibility="gone"
+	        android:id="@+id/iv_app_animation_pb_two"
+	        android:layout_width="2dip"
+	        android:layout_height="5dip"
+	        android:layout_marginTop="4dip"
+	        android:background="@android:color/white" />
+	    
+	    <ImageView
+	        android:visibility="gone"
+	        android:id="@+id/iv_app_animation_pb_three"
+	        android:layout_width="2dip"
+	        android:layout_height="5dip"
+	        android:layout_marginTop="4dip"
+	        android:background="@android:color/white" />
+   	</LinearLayout>
+   	
+
+</RelativeLayout>

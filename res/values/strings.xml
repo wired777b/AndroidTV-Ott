@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DomyBoxLauncher</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- dialog 中的button text -->
+    <string name="cancel">取消</string>
+    
+    <string name="uninstall">卸载</string>
+    <string name="uninstalling">卸载中</string>
+    
+    <string name="open_app">打开应用</string>
+    <string name="updata">立即升级</string>
+    <string name="later_updata">稍后升级</string>
+    
+    <string name="down_loading">下载中</string>
+    <string name="installing">安装中</string>
+    
+    <string name="install_defeated">安装失败</string>
+    <string name="down_load_defeated">下载失败</string>
+    <string name="uninstall_defeated">卸载失败</string>
+    
+    <string name="complete">完成</string>
+    <string name="install">安装</string>
+    
+    <!-- 主页的影视剧院 -->
+    <string name="string_main_video">影视剧院</string>
+    <string name="string_main_tv">乐享电视</string>
+    <string name="string_main_happy_share_disk">蓝光极清</string>
+    <string name="string_main_app">应  用</string>
+    <string name="string_main_setting">设  置</string>
+    
+    <string name="unopened">  账户体系还未开放，敬请期待！ </string>
+    
+    <string name="setting">设置</string>
+    <string name="setting_net">网络设置</string>
+    <string name="setting_net_delete">忘记网络</string>
+    <string name="setting_modify">修改</string>
+    <string name="setting_DNS">DNS</string>
+    <string name="setting_gateway">网关</string>
+    <string name="setting_mask">掩码</string>
+    <string name="setting_ip">IP</string>
+    <string name="setting_eth0">eth0</string>
+    <string name="setting_eth_not_found">没有找到可用的网络</string>
+    <string name="setting_open_net">请插入网线或打开可用的WIFI信号</string>
+    <string name="setting_wifi_opening">wifi正在打开</string>
+    <string name="setting_net_eth">有线连接</string>
+    <string name="setting_net_wifi">WIFI连接</string>
+    
+    
+    <string name="ethernet_connecting">等待连接网络...</string>
+    <string name="extract_ether">你的有线已经断开。。。</string>
+    <string name="ether_net_connecting">正在连接有线...请您稍等</string>
+    
+    <string name="wifi_fail_to_scan">wifi扫描失败</string>
+    
+
+</resources>

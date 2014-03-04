@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hiveview.domybox"
+    android:versionCode="0"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>  
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true" 
+        android:name="com.hiveview.domybox.common.PengDoctorApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         >
+        <activity
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+			android:screenOrientation="landscape"
+            android:name="com.hiveview.domybox.activity.InitializationActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+ 				<category android:name="android.intent.category.HOME"/>  
+		        <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>
+        </activity>
+        
+        
+        <activity 
+            android:name="com.hiveview.domybox.activity.MyWeatherActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        
+        <activity 
+            android:name="com.hiveview.domybox.activity.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        
+        <activity 
+            android:name="com.hiveview.domybox.activity.MyApplicationActivityViewPage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  ></activity>
+        
+        <activity 
+            android:name="com.hiveview.domybox.activity.MyApplicationActivity_ViewPage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  ></activity>
+        
+        <activity 
+            android:name="com.hiveview.domybox.activity.MyAppMarketActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        
+        <activity 
+            android:name="com.hiveview.domybox.activity.ApplicationActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"   ></activity>
+        
+        <activity 
+            android:name="com.hiveview.domybox.activity.MySetInfoActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  />
+        
+         <activity 
+            android:name="com.hiveview.domybox.activity.NetSetActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  />
+        
+        <activity 
+            android:name="com.hiveview.domybox.activity.AboutBoxActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  />
+        <activity 
+            android:name="com.hiveview.domybox.activity.UpdateActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  />
+        
+        
+        <!--广播注册-->  
+        <receiver android:name="com.hiveview.domybox.service.UnInstallReceiver" >  
+            <intent-filter android:priority="1000" >  
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />  
+            </intent-filter>  
+        </receiver>  
+        
+    </application>
+
+</manifest>

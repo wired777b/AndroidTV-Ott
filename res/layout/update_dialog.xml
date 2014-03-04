@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:text="有新版本" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update_title"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dip" />
+        <LinearLayout 
+         android:id="@+id/ll_update_latter"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="40dip"
+         android:layout_marginTop="40dip"
+         android:padding="2dip"
+       	 android:background="@drawable/image_focus" 
+         android:focusable="true"
+         android:layout_below="@id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+            <TextView
+	          android:id="@+id/tv_latter"
+	          android:layout_width="217.3dip"
+	       	  android:layout_height="68dip"
+	       	  android:scaleType="fitXY"
+	       	  android:padding="2dip"
+	       	  android:text="稍后再说"
+	       	  android:textColor="@android:color/white"
+	       	  android:gravity="center"
+	       	  android:textSize="36sp"
+	       	  android:background="@drawable/iv_app_button" />
+
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/ll_update_now"
+            android:padding="2dip"
+            android:layout_alignTop="@id/ll_update_latter"
+            android:layout_toRightOf="@id/ll_update_latter"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+       	  	android:background="@drawable/image_focus" 
+            android:focusable="true"
+         	android:layout_below="@id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+               <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="217.3dip"
+                android:layout_height="68dip"
+                android:background="@drawable/iv_app_button"
+                android:gravity="center"
+                android:padding="2dip"
+                android:scaleType="fitXY"
+                android:text="立刻升级"
+                android:textColor="@android:color/white"
+                android:textSize="36sp" />
+        </LinearLayout>
+        <ImageView 
+            android:layout_below="@+id/ll_update_now"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            />
+
+</RelativeLayout>

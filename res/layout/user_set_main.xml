@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_set"
+    android:background="@drawable/iv_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 标题 -->
+    <TextView 
+	 android:id="@+id/set_head"
+	 android:text="设置"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content"
+	 android:layout_marginTop="35dip"
+	 android:textSize="50sp"
+	 android:textColor="#ffffff"
+	 android:layout_marginLeft="50dip"/>
+    <!-- 我的账户 -->
+     <RelativeLayout 
+      android:id="@+id/set_user"
+      android:layout_below="@id/set_head"
+      android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:layout_marginLeft="25dip"
+	  android:layout_marginTop="20dip"
+      android:focusable="true"
+      android:background="@drawable/image_button_bg"
+      android:orientation="vertical" >
+      
+	      <com.hiveview.domybox.view.UserView
+	        android:id="@+id/userview"
+      		android:layout_width="309.33dip"
+	  		android:layout_height="481.32dip" />
+      </RelativeLayout>
+      
+      <!-- 版本升级 -->
+      <RelativeLayout 
+       android:id="@+id/set_update"
+       android:layout_below="@id/set_head"
+       android:layout_toRightOf="@+id/set_user"
+       android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+       android:layout_alignTop="@id/set_user"
+       android:layout_marginLeft="-44dip"
+       android:focusable="true"
+       android:background="@drawable/image_button_bg"
+       >
+	      <com.hiveview.domybox.view.UpdateVersionView
+	       android:id="@+id/updateview"
+		   android:layout_width="418dip"
+	       android:layout_height="238dip"/>
+       </RelativeLayout>
+
+        <!-- 关于盒子 -->
+       <RelativeLayout 
+        android:id="@+id/set_aboutBox"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/set_user"
+        android:layout_marginLeft="-44dip"
+        android:layout_toRightOf="@+id/set_update"
+        android:layout_below="@id/set_head"
+        android:focusable="true"
+        android:background="@drawable/image_button_bg">
+			<com.hiveview.domybox.view.AboutBoxView
+			  android:id="@+id/aboutboxview"
+			  android:layout_width="418dip"
+        	  android:layout_height="238dip"/>
+        </RelativeLayout>
+        <!-- 网络设置 -->
+        <RelativeLayout 
+         android:id="@+id/set_net"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/set_update"
+         android:layout_marginTop="-44dip"
+         android:layout_marginLeft="-44dip"
+         android:layout_toRightOf="@id/set_user"
+         android:focusable="true"
+         android:background="@drawable/image_button_bg">
+
+		   <com.hiveview.domybox.view.NetSetView
+		    android:id="@+id/netsetview"
+		    android:layout_width="418dip"
+            android:layout_height="238dip"
+		    />
+             
+        </RelativeLayout>
+        <!-- 天气设置 -->
+        <RelativeLayout 
+         android:id="@+id/set_weather"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/set_update"
+         android:layout_marginTop="-44dip"
+         android:layout_marginLeft="-44dip"
+         android:layout_toRightOf="@id/set_net"
+         android:focusable="true"
+         android:background="@drawable/image_button_bg">
+
+		<com.hiveview.domybox.view.WeatberView
+		    android:id="@+id/weatherview"
+		    android:layout_width="418dip"
+            android:layout_height="238dip"
+		    />
+             
+         </RelativeLayout>
+</RelativeLayout>

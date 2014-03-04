@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg" >
+    
+    <RelativeLayout 
+        android:layout_marginTop="20dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView 
+            android:id="@+id/tv_app_title"
+            android:layout_marginLeft="100dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:textColor="@android:color/white"
+            android:text="应用" />
+        
+        
+        <TextView 
+            android:id="@+id/tv_app_page"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="45sp"
+            android:text="第xx页" />
+        
+        <TextView 
+            android:id="@+id/tv_app_installed"
+            android:layout_toLeftOf="@id/tv_app_page"
+            android:layout_marginRight="30dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="45sp"
+            android:text="已安装xx个" />
+        
+    </RelativeLayout>
+    
+   <com.hiveview.domybox.view.MyGallery
+       android:layout_marginLeft="100dip"
+       android:id="@+id/app_gallery_view"
+       android:focusable="true"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" />
+
+</LinearLayout>

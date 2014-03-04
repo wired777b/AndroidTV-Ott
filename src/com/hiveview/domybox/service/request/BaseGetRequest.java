@@ -1,0 +1,1 @@
+package com.hiveview.domybox.service.request;public abstract class BaseGetRequest extends BaseRequest {		abstract public String executeToREST() ;}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/net_set_1">
+
+    <TextView
+        android:id="@+id/tv_set_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络设置"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:textColor="#ffffff"
+        android:textSize="30dip" />
+
+     <TextView  
+       android:id="@+id/net_set"
+       android:text="网络设置"
+       android:textSize="30sp"
+       android:layout_marginTop="185dip"
+       android:textColor="#ffffff"
+       android:layout_centerHorizontal="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+</RelativeLayout>

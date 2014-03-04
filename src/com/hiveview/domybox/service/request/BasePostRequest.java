@@ -1,0 +1,1 @@
+package com.hiveview.domybox.service.request;import java.io.UnsupportedEncodingException;import org.apache.http.client.methods.HttpPost;public abstract class BasePostRequest extends BaseRequest {	abstract public HttpPost executeToEntity() throws UnsupportedEncodingException;	}

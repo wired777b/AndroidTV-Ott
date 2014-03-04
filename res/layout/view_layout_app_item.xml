@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_app_item_bg"
+        android:orientation="vertical"
+        android:background="@drawable/image_button_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout 
+            android:id="@+id/rl_content"
+            android:background="@drawable/app_bg"
+            android:layout_width="190dip"
+            android:layout_height="238dip">
+            
+            <com.hiveview.domybox.view.MarqueeText 
+                android:id="@+id/tv_app_item_name"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dip"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="name"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"/>
+            
+            <com.hiveview.domybox.common.image.ImageLoadView 
+		         android:id="@+id/iv_app_item_image"
+		         android:layout_width="100dip"
+		         android:layout_height="100dip"
+		         android:src="@drawable/img_default"
+		         android:layout_centerHorizontal="true"
+		         android:layout_marginTop="26dip"
+		           />
+
+        </RelativeLayout>
+	     
+	     <ImageView 
+	        android:id="@+id/iv_app_installed"
+	        android:visibility="gone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/iv_app_installed" />
+	     
+	     
+	     <LinearLayout 
+	         android:id="@+id/ll_app_delected"
+	         android:layout_width="190dip"
+	         android:layout_height="238dip"
+	         android:visibility="gone"
+	         android:alpha="0.4"
+	         android:background="@color/app_delected_bg">
+	         
+	         <ImageView
+	             android:id="@+id/iv_app_deleted"
+	             android:visibility="gone"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:background="@drawable/iv_app_deleted" />
+	         
+	     </LinearLayout>
+	     
+	     
+    </RelativeLayout>
+    
+    <!-- 
+    <ImageView 
+        android:id="@+id/iv_app_deleted"
+        android:visibility="gone"
+        android:layout_alignTop="@id/rl_app_item_bg"
+        android:layout_alignRight="@id/rl_app_item_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iv_app_deleted" />
+     -->
+    
+
+</RelativeLayout>

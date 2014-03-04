@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/base_weather"
+    >
+
+ <ImageView 
+     android:id="@+id/fullparent"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:scaleType="fitXY"
+     android:background="@drawable/iv_main_bg"
+     />
+ <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:gravity="center_vertical"
+   		android:layout_marginTop="25dip"
+        android:layout_marginLeft="80dip"
+        android:orientation="horizontal">
+      <TextView
+        android:id="@+id/weather_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48dip"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:text="设置 " />
+      <ImageView 
+        android:layout_width="1dip"
+        android:layout_height="43dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="-18dip"
+        android:background="#ffffff"/>
+   	  <TextView
+        android:id="@+id/weather_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dip"
+        android:layout_marginLeft="7dip"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:text="天气设置 " />
+	 </LinearLayout>
+    
+    <include
+        android:layout_height="wrap_content"
+        android:id="@+id/today_weather"
+        layout="@layout/today_weather" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_future"
+        android:layout_marginTop="40dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dip"
+        android:orientation="horizontal"
+        android:layout_marginLeft="80dip" >
+        
+	    <include
+	        android:id="@+id/tomorrow01"
+	        layout="@layout/weather_item" />
+	    
+		<ImageView
+	        android:layout_width="20dip"
+	        android:layout_height="30dip" />
+
+	    <include
+	        android:id="@+id/tomorrow02"
+	        layout="@layout/weather_item" />
+	    
+		<ImageView
+		     android:layout_width="20dip"
+		     android:layout_height="30dip" />
+	 	 
+	    <include
+	        android:id="@+id/tomorrow03"
+	        layout="@layout/weather_item" />
+	<FrameLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dip"
+	    android:background="@drawable/city_bg">
+	    <ImageView 
+		    android:id="@+id/iv_center_black_province"
+		    android:layout_width="140dip"
+		    android:layout_height="85dip"
+		    android:background="#000000"
+		    android:layout_marginTop="94dip"
+		    android:layout_gravity="center_horizontal"/>
+		<com.hiveview.domybox.view.WheelView
+		    android:id="@+id/province"
+		    android:background="@drawable/city_bg"
+		    android:layout_width="140dip"
+		    android:layout_height="240dip"
+		    android:layout_gravity="center"
+		    android:cacheColorHint="#00000000"
+		    android:listSelector="#66ffffff"
+		    android:focusable="true" />
+	</FrameLayout>
+	<FrameLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dip"
+	    android:background="@drawable/city_bg">		
+	    <ImageView 
+		  android:id="@+id/iv_center_black_city"
+		  android:layout_width="140dip"
+		  android:layout_height="85dip"
+		  android:background="#000000"
+		  android:visibility="invisible"
+		  android:layout_marginTop="94dip"
+		  android:layout_gravity="center_horizontal"/>
+		<com.hiveview.domybox.view.WheelView 
+		  android:id="@+id/city"
+		  android:background="@drawable/city_bg"
+		  android:layout_width="140dip"
+		  android:layout_height="240dip"
+		  android:layout_gravity="center"
+		  android:cacheColorHint="#00000000"
+		  android:listSelector="#66ffffff"
+		  android:focusable="true" />
+	</FrameLayout>							
+	<FrameLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dip"
+	    android:background="@drawable/city_bg">	    
+	    <ImageView 
+		  android:id="@+id/iv_center_black_zone"
+		  android:layout_width="140dip"
+		  android:layout_height="85dip"
+		  android:background="#000000"
+		  android:visibility="invisible"
+		  android:layout_marginTop="94dip"
+		  android:layout_gravity="center_horizontal"/> 
+		<com.hiveview.domybox.view.WheelView
+		  android:id="@+id/zone"
+		  android:background="@drawable/city_bg"
+		  android:layout_width="140dip"
+		  android:layout_height="240dip"
+		  android:layout_gravity="center"
+		  android:cacheColorHint="#00000000"
+		  android:listSelector="#66ffffff"
+		  android:focusable="true" /> 
+	</FrameLayout>
+	        
+    </LinearLayout> 
+</LinearLayout>
+
+ <com.hiveview.domybox.view.ProgressDialog
+        android:id="@+id/iv_hiveload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="?android:attr/progressBarStyleSmall"
+         />
+
+</FrameLayout>

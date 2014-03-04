@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="102dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="#CC191919" >
+    <ImageView
+        android:id="@+id/net_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <!-- wifi名 -->
+    <TextView 
+        android:id="@+id/wifi_name"
+        android:layout_width="240dip"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:textSize="48sp"
+        android:layout_marginLeft="5dip"/>
+    <!-- wifi的状态 -->
+    <TextView 
+        android:id="@+id/wifi_name"
+        android:layout_width="240dip"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:textSize="48sp"
+        android:layout_marginLeft="5dip"/>
+    <!-- wifi标示 -->
+    <ImageView 
+        android:id="@+id/wifi_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"/>
+    <!-- 箭头 -->
+    <ImageView 
+        android:id="@+id/wifi_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"/>
+    
+</LinearLayout>

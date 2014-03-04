@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_1" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_2" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_3" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_4" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_5" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_6" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_7" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_8" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_9" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_10" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_11" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_12" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_13" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_14" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_15" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_16" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_17" />
+    <item android:duration="100" android:drawable="@drawable/animation_item_happy_share_disk_18" />
+</animation-list>

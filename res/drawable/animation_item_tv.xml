@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_1" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_2" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_3" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_4" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_5" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_6" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_7" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_8" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_9" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_10" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_11" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_12" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_13" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_14" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_15" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_16" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_17" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_18" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_19" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_20" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_21" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_22" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_23" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_24" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_25" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_26" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_27" />
+    <item android:duration="150" android:drawable="@drawable/animation_item_tv_28" />
+</animation-list>

@@ -1,0 +1,389 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layout_main_container"
+    tools:context=".MainActivity" >
+
+    <ImageView 
+        android:id="@+id/iv_main_bg"
+        android:src="@drawable/iv_main_bg"
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    
+   	<!-- logo -->
+     <ImageView
+         android:id="@+id/iv_main_logo"
+         android:layout_marginTop="30dip"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="50dip"
+         android:background="@drawable/logo" />
+     
+      <!-- date -->
+        
+       <LinearLayout  
+           	android:id="@+id/ll_main_date"
+           	android:layout_alignParentRight="true"
+           	android:layout_marginRight="48dip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="150dip"
+		    android:gravity="center_vertical"
+		    android:layout_gravity="center"
+		    android:orientation="vertical" >
+	    
+		    <TextView 
+		        android:id="@+id/tv_main_week"
+		        android:textSize="50sp"
+		        android:textColor="@android:color/white"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="今天星期五"
+		        />
+		    <TextView 
+		        android:layout_marginTop="10dip"
+		        android:id="@+id/tv_main_date"
+		        android:textColor="@android:color/white"
+		        android:textSize="35sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="2013/8/21"
+		        />
+	    
+	</LinearLayout>
+
+     <!-- welcome -->
+
+     <ImageView
+         android:id="@+id/iv_main_welcom"
+         android:layout_marginRight="40dip"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@id/ll_main_date"
+         android:background="@drawable/iv_main_welcome" />
+     
+     
+      
+     
+   	    <RelativeLayout
+          android:id="@+id/ll_main_movie"
+          android:layout_marginTop="120dip"
+   	      android:layout_marginLeft="25dip"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:focusable="true"
+	      android:background="@drawable/image_button_bg"  >
+   	      
+   	        
+ 	      <com.hiveview.domybox.view.VideoItemView
+ 	          android:id="@+id/item_view_video"
+ 	          android:layout_width="310dip"
+ 	          android:layout_height="480dip"
+ 	          android:layout_alignParentLeft="true"
+ 	          android:layout_alignParentTop="true" />
+ 	      
+ 	      <!-- 
+ 	      <include 
+ 	          layout="@layout/animal_layout_video"
+ 	          android:layout_centerHorizontal="true"
+          	  android:layout_marginTop="100dip"
+ 	          android:layout_width="wrap_content"
+ 	          android:layout_height="wrap_content"/>
+ 	       -->
+ 	       
+   	    <ImageView 
+	        android:id="@+id/iv_item_video_frame_demo"
+	        android:layout_centerHorizontal="true"
+          	android:layout_marginTop="100dip"
+	        android:src="@drawable/animation_item_video_1"
+	        android:layout_width="140dip"
+	        android:layout_height="140dip"
+	        android:scaleType="fitXY" />
+  	          
+	  	</RelativeLayout>
+	  	
+   	    
+	  	
+   	    <RelativeLayout
+          android:id="@+id/ll_main_tv"
+          android:layout_alignTop="@id/ll_main_movie"
+   	      android:layout_marginLeft="-44dip"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:focusable="true"
+	      android:layout_toRightOf="@id/ll_main_movie"
+	      android:background="@drawable/image_button_bg"  >
+   	      
+   	      <com.hiveview.domybox.view.VideoItemView 
+   	         android:id="@+id/item_view_tv"
+	         android:layout_width="310dip" 
+	         android:layout_height="480dip" />
+   	      
+   	      <LinearLayout 
+	        android:id="@+id/ll_animal_tv"
+	        android:layout_marginTop="100dip"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/tv_frame"
+	        android:layout_width="191.33dip"
+	        android:layout_height="144dip"
+	        android:gravity="center_horizontal"
+	        android:scaleType="fitXY" >
+	        
+	        <ImageView 
+		        android:id="@+id/iv_item_tv_play"
+		        android:layout_marginTop="20dip"
+		        android:src="@drawable/tv_play"
+		        android:layout_width="54dip"
+		        android:layout_height="57.33dip"
+		        android:scaleType="fitXY" />
+   	      </LinearLayout>
+   	      
+	  	</RelativeLayout>
+	  	
+   	    
+	  	
+   	    
+     
+   	    <RelativeLayout
+   	      android:id="@+id/ll_main_happy_enjoy_area"
+   	      android:layout_alignTop="@id/ll_main_movie"
+   	      android:layout_marginLeft="-44dip"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_toRightOf="@id/ll_main_tv"
+	      android:focusable="true"
+	      android:background="@drawable/image_button_bg"  >
+   	      
+	      <com.hiveview.domybox.view.SettingsItemView 
+   	         android:id="@+id/item_view_happy_share_disk"
+	         android:layout_width="329dip" 
+	         android:layout_height="156dip" />
+	      
+	      <include 
+	          layout="@layout/animal_layout_happy_share"
+	          android:layout_centerVertical="true"
+	          android:layout_marginLeft="50dip"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"/>
+	      
+	  	</RelativeLayout>
+	  	
+	  	 
+   	    
+   	    <RelativeLayout
+          android:id="@+id/ll_main_application"
+	      android:layout_below="@id/ll_main_happy_enjoy_area"
+   	      android:layout_marginLeft="-44dip"
+   	      android:layout_marginTop="-44dip"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:focusable="true"
+	      android:layout_toRightOf="@id/ll_main_tv"
+	      android:background="@drawable/image_button_bg"  >
+	      
+	      <com.hiveview.domybox.view.SettingsItemView 
+   	         android:id="@+id/item_view_application"
+	         android:layout_width="329dip" 
+	         android:layout_height="156dip" />
+	      
+	      <!-- 
+	      
+	       	<ImageView 
+		        android:id="@+id/iv_item_application_icon"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="50dip"
+		        android:background="@drawable/app_icon"
+		        android:layout_width="92dip"
+		        android:layout_height="92dip" />
+		   	
+		   	<ImageView
+		       	android:id="@+id/iv_app_animation_title"
+		       	android:layout_alignLeft="@id/iv_item_application_icon"
+		       	android:layout_alignParentTop="true"
+		       	android:layout_width="10dip"
+		       	android:layout_height="5dip"
+		       	android:layout_marginTop="45dip"
+		       	android:layout_marginLeft="35dip"
+		       	android:background="#1dc0f3" />
+		    <LinearLayout
+		   	    android:id="@+id/ll_app_animation_pb"
+		   	    android:layout_width="50dip"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_alignLeft="@id/iv_item_application_icon"
+		   	    android:layout_alignParentTop="true"
+		   	    android:layout_marginLeft="32dip"
+		   	    android:layout_marginTop="55dip"
+		   	    android:orientation="vertical" >
+		
+		   	    <ImageView
+		   	        android:visibility="gone"
+			        android:id="@+id/iv_app_animation_pb_one"
+			        android:layout_width="2dip"
+			        android:layout_height="5dip"
+			        android:layout_marginTop="4dip"
+			        android:background="@android:color/white" />
+		   
+			    <ImageView
+			        android:visibility="gone"
+			        android:id="@+id/iv_app_animation_pb_two"
+			        android:layout_width="2dip"
+			        android:layout_height="5dip"
+			        android:layout_marginTop="4dip"
+			        android:background="@android:color/white" />
+			    
+			    <ImageView
+			        android:visibility="gone"
+			        android:id="@+id/iv_app_animation_pb_three"
+			        android:layout_width="2dip"
+			        android:layout_height="5dip"
+			        android:layout_marginTop="4dip"
+			        android:background="@android:color/white" />
+		   	</LinearLayout>
+	       -->
+	      <include
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_centerVertical="true"
+		      android:layout_marginLeft="50dip"
+		      layout="@layout/rl_layout_app"/>
+	  	</RelativeLayout>
+	  
+      	
+	  
+	  	<!-- 设置 -->
+   	    <RelativeLayout
+          android:id="@+id/ll_main_setting"
+          android:layout_below="@id/ll_main_application"
+   	      android:layout_marginLeft="-44dip"
+   	      android:layout_marginTop="-45dip"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:focusable="true"
+	      android:layout_toRightOf="@id/ll_main_tv"
+	      android:background="@drawable/image_button_bg"  >
+	      
+	      <com.hiveview.domybox.view.SettingsItemView 
+   	         android:id="@+id/item_view_settings"
+	         android:layout_width="329dip" 
+	         android:layout_height="156dip" />
+	      
+	      
+	      <LinearLayout 
+	          android:layout_centerVertical="true"
+	          android:layout_marginLeft="50dip"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content">
+	          <ImageView 
+		          android:id="@+id/iv_item_settiongs_icon"
+		          android:src="@drawable/setting_icon"
+		          android:layout_width="92dip"
+		          android:layout_height="92dip" />
+	      </LinearLayout>
+	      
+	  	</RelativeLayout>
+	  	
+   	    <!-- 
+   	    <ImageView 
+	        android:id="@+id/iv_item_settiongs_icon"
+	        android:layout_marginTop="500dip"
+	        android:layout_marginLeft="735dip"
+	        android:src="@drawable/setting_icon"
+	        android:layout_width="92dip"
+	        android:layout_height="92dip" />
+   	     -->
+        
+   	    
+   	    <LinearLayout 
+   	        android:id="@+id/ll_clock_main_time"
+   	        android:layout_toRightOf="@id/ll_main_happy_enjoy_area"
+   	        android:layout_alignTop="@id/ll_main_movie"
+   	        android:layout_marginLeft="-30dip"
+   	        android:background="@drawable/image_button_bg"
+   	        android:focusable="true"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content">
+   	        
+
+			   <com.hiveview.domybox.view.TimerView 
+			    android:id="@+id/myTV_time"
+			    android:layout_width="193.33dip"
+			    android:layout_height="109dip"
+			    />
+   	        
+   	    </LinearLayout>
+   	    
+   	    
+   	    <LinearLayout 
+   	        android:id="@+id/ll_main_weather"
+   	        android:layout_toRightOf="@id/ll_main_happy_enjoy_area"
+   	        android:layout_marginTop="-45dip"
+   	        android:layout_marginLeft="-30dip"
+   	        android:layout_below="@id/ll_clock_main_time"
+   	        android:background="@drawable/image_button_bg"
+   	        android:focusable="true"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content">
+   	        
+   	        <com.hiveview.domybox.view.WeatherView
+   	            android:id="@+id/my_weather"
+			    android:layout_width="193.33dip"
+    			android:layout_height="221dip"/>
+   	        
+   	    </LinearLayout>
+   	    
+   	    
+   	    <LinearLayout 
+   	        android:id="@+id/ll_main_wifi"
+   	        android:layout_toRightOf="@id/ll_main_happy_enjoy_area"
+   	        android:layout_marginTop="-45dip"
+   	        android:layout_marginLeft="-30dip"
+   	        android:layout_below="@id/ll_main_weather"
+   	        android:background="@drawable/image_button_bg"
+   	        android:focusable="true"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content" >
+   	        
+   	        <com.hiveview.domybox.view.WifiView
+   	            android:id="@+id/view_main_wifi"
+			    android:layout_width="193.33dip"
+			    android:layout_height="139.33dip" />
+   	        
+   	    </LinearLayout>
+
+   	    <LinearLayout
+   	        android:visibility="gone"
+   	        android:layout_width="300dip"
+   	        android:layout_height="wrap_content"
+   	        android:layout_alignLeft="@+id/iv_main_logo"
+   	        android:layout_alignParentBottom="true"
+   	        android:gravity="center_vertical"
+   	        android:orientation="horizontal" >
+
+   	        <TextView
+   	            android:id="@+id/tv_component_updata"
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:text="xxx组件升级中"
+   	            android:textSize="30dip" />
+
+   	        <ProgressBar
+   	            android:id="@+id/pb_component"
+   	            style="@style/progressBarStyleHorizontal"
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content" />
+   	        
+   	    </LinearLayout>
+   	    
+ </RelativeLayout>
+    <ImageView 
+        android:id="@+id/iv_main_mengban_bg"
+        android:background="#CC000000"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

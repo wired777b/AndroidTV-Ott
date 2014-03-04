@@ -1,0 +1,1 @@
+package com.hiveview.domybox.service.net;import java.io.InputStream;public abstract class BaseHttpPostConnector extends BaseHttpConnector {		public abstract InputStream getPostResponse();}

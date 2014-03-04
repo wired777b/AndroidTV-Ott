@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_main_week"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天星期五"
+        />
+    <TextView 
+        android:layout_marginTop="10dip"
+        android:id="@+id/tv_main_date"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2013/8/21"
+        />
+    
+
+</LinearLayout>

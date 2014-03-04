@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="193.33dip"
+    android:layout_height="139.33dip"
+    android:orientation="vertical" >
+    
+    
+    <TextView 
+        android:id="@+id/tv_wifi_view_connect_name"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/wifi_bg_2"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="未连接"
+        android:layout_width="193.33dip"
+        android:layout_height="38dip"/>
+    
+    <LinearLayout 
+		android:background="@drawable/wifi_bg"
+        android:layout_above="@id/tv_wifi_view_connect_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        
+         <ImageView 
+            android:id="@+id/iv_wifi_view_state"
+	        android:layout_width="193.33dip"
+	        android:layout_height="101.33dip"
+	        android:src="@drawable/network_unconnected"
+	        android:scaleType="centerInside" />
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

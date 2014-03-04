@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_1" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_2" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_3" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_4" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_5" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_6" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_7" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_8" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_9" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_10" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_11" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_12" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_13" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_14" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_15" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_16" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_17" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_18" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_19" />
+    <item android:duration="100" android:drawable="@drawable/animation_domy_loadin_20" />
+</animation-list>

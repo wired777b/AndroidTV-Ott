@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/my_account">
+    
+           <TextView
+		        android:id="@+id/about_account_1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="我的账户"
+		        android:layout_marginLeft="20dip"
+		        android:layout_marginTop="20dip"
+		        android:textColor="#ffffff"
+		        android:textSize="30dip" />
+    
+	        <ImageView
+	            android:id="@+id/user_logo1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/user_logo"
+	            android:layout_centerInParent="true"
+	            />
+
+	        <TextView
+	            android:id="@+id/user_state"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_below="@id/user_logo1"
+	            android:layout_marginTop="180dip"
+	            android:text="未登录"
+	            android:textColor="#ffffff"
+	            android:textSize="32sp" />
+
+</RelativeLayout>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_bg"
+    android:orientation="vertical" >
+	        <ImageView
+	            android:id="@+id/user_logo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/user_logo"
+	            android:layout_gravity="center"
+	            />
+	        <TextView
+	            android:id="@+id/user_state"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="未登录"
+	            android:textColor="#ffffff"
+	            android:layout_gravity="center_horizontal"
+	            android:textSize="60sp" />
+
+</LinearLayout> -->

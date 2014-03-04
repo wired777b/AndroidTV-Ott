@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iv_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:layout_marginLeft="60dip"
+        android:orientation="horizontal" >
+
+	    <TextView 
+	     android:id="@+id/user_set"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="center_vertical"
+	     android:textSize="50sp"
+	     android:layout_marginLeft="40dip"
+	     android:layout_marginTop="2dip"
+	     android:textColor="#ffffff"/>
+
+	    <ImageView
+	        android:id="@+id/iv_v"
+	        android:layout_width="1dip"
+	        android:layout_height="64dip"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="10dip"
+	        android:background="#ffffff" />
+
+    	<TextView
+    	 android:id="@+id/user_set_about_box"
+    	 android:layout_width="wrap_content"
+    	 android:layout_height="wrap_content"
+    	 android:text="关于盒子"
+    	 android:layout_gravity="center_vertical"
+    	 android:layout_marginLeft="5dip"
+    	 android:textColor="#ffffff"
+    	 android:textSize="38sp" />
+    </LinearLayout>
+    <RelativeLayout 
+      android:id="@+id/rl_body"
+      android:layout_width="970dip"
+      android:layout_height="424.6dip"
+      android:background="#CC191919"
+      android:layout_marginLeft="80dip"
+      android:layout_below="@id/ll_title"
+      android:layout_marginTop="40dip"
+      android:layout_centerInParent="true">
+    	
+        <TextView
+        android:id="@+id/tv_m_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:layout_alignRight="@+id/tv_m_version"
+        android:textColor="#ffffff"
+        android:layout_marginTop="60dp"
+        android:text="本机型号：" />
+    	<TextView
+        android:id="@+id/tv_m_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dip"
+        android:layout_below="@id/tv_m_no"
+        android:layout_marginLeft="30dip"
+        android:text="操作系统版本：" />
+
+    	<com.hiveview.domybox.view.MyTextView
+        android:id="@+id/textView1"
+        android:layout_width="235dip"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/tv_m_version"
+        android:layout_alignBottom="@+id/tv_m_version"
+        android:layout_toRightOf="@+id/tv_m_version"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="版本----1" />
+
+    	<com.hiveview.domybox.view.MyTextView
+        android:id="@+id/tv_m_number"
+        android:layout_width="235dip"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/tv_m_no"
+        android:layout_alignBottom="@+id/tv_m_no"
+        android:layout_toRightOf="@+id/tv_m_version"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="型号----1" />
+
+
+
+    	<TextView
+        android:id="@+id/tv_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dip"
+        android:layout_below="@+id/tv_m_version"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="WIFI地址：" />
+
+    	<com.hiveview.domybox.view.MyTextView
+        android:id="@+id/tv_wifi_value"
+        android:layout_width="235dip"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/tv_wifi_name"
+        android:layout_alignBottom="@+id/tv_wifi_name"
+        android:layout_alignLeft="@+id/textView1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="wifi地址" />
+
+    	<TextView
+        android:id="@+id/tv_ytadd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dip"
+        android:layout_below="@+id/tv_wifi_name"
+        android:layout_toLeftOf="@+id/tv_wifi_value"
+        android:text="以太网地址：" />
+
+    	<com.hiveview.domybox.view.MyTextView
+        android:id="@+id/tv_ytadd_value"
+        android:layout_width="235dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_ytadd_name"
+        android:layout_alignBottom="@+id/tv_ytadd_name"
+        android:layout_below="@+id/tv_wifi_name"
+        android:layout_toRightOf="@+id/tv_wifi_name"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="以太网地址" />
+
+
+
+    	<TextView
+        android:id="@+id/tv_ip_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/tv_ytadd_name"
+        android:layout_marginTop="7dip"
+        android:layout_alignRight="@+id/tv_ytadd_name"
+        android:text="IP地址：" />
+    	
+    	<TextView
+        android:id="@+id/tv_ip_value"
+        android:layout_alignBaseline="@+id/tv_ip_name"
+        android:layout_alignBottom="@+id/tv_ip_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@+id/tv_ip_name"
+        android:text="ip地址" />
+
+    	<TextView
+        android:id="@+id/tv_hotline_name"
+        android:layout_marginTop="7dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_alignLeft="@+id/tv_wifi_name"
+        android:layout_below="@+id/tv_ip_name"
+        android:text="服务热线：" />
+
+    	<TextView
+        android:id="@+id/tv_hotline_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/tv_hotline_name"
+        android:layout_alignBottom="@+id/tv_hotline_name"
+        android:layout_toRightOf="@id/tv_hotline_name"
+        android:text="12345678" />
+
+    	<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="1dip"
+        android:layout_height="590dip"
+        android:layout_alignBottom="@+id/tv_hotline_value"
+        android:layout_alignTop="@+id/tv_m_number"
+        android:layout_marginLeft="505dip"
+        android:background="#737373" />
+
+    	<TextView
+        android:id="@+id/TextView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_marginLeft="30dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="盒子存储" />
+
+    	<ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="380dip"
+        android:max="100"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_alignLeft="@+id/TextView09"
+        android:layout_below="@+id/TextView09" />
+
+    	<TextView
+        android:id="@+id/tv_box_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="7dip"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="200M/400M" />
+
+     	<TextView
+        android:id="@+id/tv_boxleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_box_rl"
+        android:layout_alignBottom="@+id/tv_box_rl"
+        android:layout_alignRight="@+id/progressBar1"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="剩余50%" />
+
+    	<TextView
+        android:id="@+id/TextView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_box_rl"
+        android:layout_centerVertical="true"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="SD卡存储" />
+
+    	<ProgressBar
+        android:id="@+id/ProgressBar01"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="380dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView12"
+        android:layout_marginTop="10dip"
+        android:max="100"
+        android:layout_below="@+id/TextView12" />
+
+    	<TextView
+        android:id="@+id/tv_sd_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ProgressBar01"
+        android:layout_below="@+id/ProgressBar01"
+        android:layout_marginTop="7dip"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="200M/400M" />
+    	<TextView
+        android:id="@+id/tv_sdleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_sd_rl"
+        android:layout_alignBottom="@+id/tv_sd_rl"
+        android:layout_alignRight="@id/ProgressBar01"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="剩余50%" />
+    	
+    <LinearLayout 
+        android:id="@+id/ll_btn"
+        android:focusable="true"
+		android:layout_width="wrap_content"
+	    android:layout_height="62.666dip"
+        android:layout_alignParentLeft="true"
+		android:layout_marginTop="60dip"
+        android:layout_marginLeft="90dip"
+        android:padding="3dip"
+	    android:layout_below="@id/tv_hotline_name"
+	    android:background="@drawable/image_focus"
+	    android:orientation="horizontal">
+	    <TextView 
+	      android:id="@+id/tv_box_name"
+	      android:text="盒子名称"
+	      android:textColor="#ffffff"
+	      android:textSize="26sp"
+	      android:gravity="center"
+	      android:layout_width="140dip"
+	      android:layout_height="match_parent"
+	      android:background="@drawable/box_name1"/>
+	    <TextView
+	      android:id="@+id/tv_box_value"
+	      android:layout_width="220dip"
+	      android:layout_height="match_parent"
+	      android:background="#000000"
+	      android:gravity="center"
+	      android:text="DomyBox"
+	      android:textColor="#ffffff"
+	      android:textSize="30sp" />
+	</LinearLayout> 
+	<LinearLayout 
+	    android:id="@+id/resume_factory"
+	    android:focusable="true"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@id/ll_btn"
+	    android:padding="3dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+	    android:background="@drawable/image_focus">
+	   <TextView
+	     android:id="@+id/resume"
+	     android:text="恢复出厂设置"
+	     android:textSize="28sp"
+	     android:layout_width="360dip"
+	     android:layout_height="wrap_content"
+	     android:gravity="center"
+	     android:textColor="#ffffff"
+	     android:background="@drawable/iv_app_button"/>
+	</LinearLayout>
+    </RelativeLayout>
+    
+ 
+    
+
+</RelativeLayout>

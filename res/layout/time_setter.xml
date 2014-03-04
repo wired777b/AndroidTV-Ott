@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dialog"
+    android:layout_width="925dip"
+    android:layout_height="401dip"
+    android:gravity="center_horizontal"
+    android:background="#CC191919"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间显示设置"
+        android:layout_marginTop="30dip"
+        android:textSize="40dip"
+        android:textColor="#ffffff"
+        />
+
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dip"
+        android:layout_marginBottom="20dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+      <ImageButton
+          android:id="@+id/time12"
+          android:layout_marginLeft="40dip"
+          android:layout_width="217.3dip"
+       	  android:layout_height="68dip"
+       	  android:scaleType="fitXY"
+       	  android:padding="3dip"
+       	  android:background="@drawable/image_focus" 
+		  android:src="@drawable/time12"       	  
+       	  />
+        <ImageButton
+          android:id="@+id/time24"
+          android:layout_marginLeft="60dip"
+          android:layout_marginRight="40dip"
+          android:layout_width="217.3dip"
+       	  android:layout_height="68dip"
+       	  android:scaleType="fitXY"
+       	  android:padding="3dip"
+       	  android:background="@drawable/image_focus" 
+       	  android:src="@drawable/time24"
+       	  /> 
+        
+    </LinearLayout>
+
+</LinearLayout>

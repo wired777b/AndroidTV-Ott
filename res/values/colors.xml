@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="gray">#191919</color>
+    <color name="focused">#99191919</color>
+    <color name="unfocused">#CC282828</color>
+    <!--  -->
+    <color name="progressbar_background">#323232</color>
+    
+    <!-- app 删除的蒙版 -->
+    <color name="app_delected_bg">#000000</color>
+    
+    
+    <!-- app 精度条色 -->
+    <color name="app_pb_bg">#D2F2FD</color>
+    
+    <!-- setings tab bg -->
+    <color name="setting_tab_select">#CC191919</color>
+    <color name="setting_tab_nomarl">#99282828</color>
+    
+</resources>
